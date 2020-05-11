@@ -5,8 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-use Illuminate\support\Facades\Auth ;
-use Illuminate\Http\Request ;
+
 class LoginController extends Controller
 {
     /*
@@ -27,33 +26,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    // protected $redirectTo = RouteServiceProvider::HOME;
-
-
-
-    // public function redirectTo()
-    // {
-    //     if(  Auth::user()->hasrole('1') ){
-    //          $redirectTo = RouteServiceProvider::HOME;
-    //          return $redirectTo ;
-    //     }
-    // }
-
-    public function authenticate(Request $request)
-    {
-       
-
-            // $credentials = $request->only('email', 'password');
-
-            if (Auth::attempt(['email' => $email, 'password' => $password, 'role' => 1])) {
-                // Authentication passed...
-                return redirect()->intended('dashboard');
-            }
-
-        
-
-      
-    }
+    protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
      * Create a new controller instance.
@@ -64,6 +37,4 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
-
-  
 }
