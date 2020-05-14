@@ -53,3 +53,5 @@ Route::delete('/category_delete/{id}' , 'CategoryController@destroy');
 Route::get('/category', 'CategoryViewController@index')->middleware('auth');
 Route::get('/updateCategory/{id}' , 'CategoryViewController@show')->middleware('auth');
 Route::get('/addcategory' , 'CategoryViewController@add')->middleware('auth');
+
+Route::view('header' , 'Admin.Header');

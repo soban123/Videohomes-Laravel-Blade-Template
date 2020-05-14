@@ -8,6 +8,16 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link rel="shortcut icon" href="img/logo1.ico"/>
+
+<!--global styles-->
+<link type="text/css" rel="stylesheet" href="./css/components.css" />
+<link type="text/css" rel="stylesheet" href="css/custom.css" />
+<!-- end of global styles-->
+<link type="text/css" rel="stylesheet" href="vendors/chartist/css/chartist.min.css" />
+<link type="text/css" rel="stylesheet" href="vendors/circliful/css/jquery.circliful.css">
+<link type="text/css" rel="stylesheet" href="css/pages/index.css">
+<link type="text/css" rel="stylesheet" href="#" id="skin_change" />
 
         <!-- Styles -->
         <style>
